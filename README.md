@@ -7,16 +7,16 @@ Análise de preservação de estilo autoral em LLMs usando steering de ativaçõ
 ```
 linguistics_and_model_steering/
 ├── data/
-│   ├── original/              # Textos originais (prefixes)
-│   │   ├── lispector/         # 15 samples (5 títulos × 3 samples)
-│   │   ├── woolf/             # 15 samples
-│   │   ├── wikipedia_pt/      # 15 samples
-│   │   └── wikipedia_eng/     # 15 samples
+│   ├── original/                                    # Textos originais (prefixes)
+│   │   ├── lispector/                               # 15 samples (5 títulos × 3 samples)
+│   │   ├── woolf/                                   # 15 samples
+│   │   ├── wikipedia_pt/                            # 15 samples
+│   │   └── wikipedia_eng/                           # 15 samples
 │   │
-│   └── generated/             # Textos gerados pela LLM
-│       ├── baseline/          # Prompt básico (continue_plain)
-│       ├── style_description/ # Prompt com descrição estilística
-│       └── steering/          # Activation steering literário
+│   └── generated/                                   # Textos gerados pela LLM
+│       ├── 00_BASELINE-raw_prompt/                  # Prompt básico sem instruções
+│       ├── 01_PROMPT_STEERING-style-description/    # Prompt com descrição estilística
+│       └── 02_ACTIVATION_STEERING-raw-prompt/       # Steering de ativações + prompt básico
 │
 ├── metrics/                   # Métricas extraídas (a gerar)
 ├── analysis/                  # Scripts de análise (a criar)
@@ -37,13 +37,21 @@ linguistics_and_model_steering/
 - **Total: 60 samples originais** (4 autores × 5 títulos × 3 samples)
 
 **Condições experimentais:**
-- **Baseline**: Prompt básico sem instruções de estilo
-- **Style Description**: Prompt com descrição estilométrica detalhada
-- **Steering**: Activation steering usando vetores literários
-  - Wikipedia PT → steering de Lispector
-  - Lispector → steering de Lispector
-  - Wikipedia EN → steering de Woolf
-  - Woolf → steering de Woolf
+
+1. **00_BASELINE-raw_prompt**: Prompt básico sem instruções de estilo
+   - Apenas "Continue este texto..."
+
+2. **01_PROMPT_STEERING-style-description**: Guia explícito via prompt
+   - Prompt com descrição estilométrica detalhada do autor
+   - Ex: "Continue com frases curtas, ritmo ágil, foco em ações..."
+
+3. **02_ACTIVATION_STEERING-raw-prompt**: Guia implícito via manipulação interna
+   - Prompt básico + steering de ativações (camada 12)
+   - Vetores literários aplicados a todos:
+     * Wikipedia PT → steering de Lispector
+     * Lispector → steering de Lispector  
+     * Wikipedia EN → steering de Woolf
+     * Woolf → steering de Woolf
 
 **Repetições:** 3 por sample/condição
 
@@ -70,7 +78,7 @@ Exemplo: lispector/brasilia__s00.txt
 **Textos gerados:**
 ```
 {condition}/{author}/{title}__s{sample:02d}__r{rep:02d}.txt
-Exemplo: baseline/lispector/brasilia__s00__r00.txt
+Exemplo: 00_BASELINE-raw_prompt/lispector/brasilia__s00__r00.txt
 ```
 
 ## 🔧 Próximos Passos

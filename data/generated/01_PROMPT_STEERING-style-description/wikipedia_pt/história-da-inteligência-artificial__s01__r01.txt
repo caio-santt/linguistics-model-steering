@@ -1,0 +1,15 @@
+O sucesso inicial prosseguiu com experimentos simples. Cientistas testaram truques de lógica em máquinas. Eles programaram jogos de xadrez. Eles escreveram programas que resolviam problemas de lógica. Cada teste aumentava a confiança. A confiança, por sua vez, alimentava mais testes. O ciclo repetia-se rapidamente.
+
+Os primeiros programas eram frágeis. Eram sensíveis a erros de sintaxe. Eram lentos. Eles ainda não entendiam linguagem natural. Ainda não compreendiam contexto. Ainda não podiam aprender com experiência. Mesmo assim, os pesquisadores continuaram. Eles colecionavam dados. Eles refinavam algoritmos. Eles ajustavam parâmetros. Eles repetiam.
+
+Na década de 1960, surgiram novas ideias. A busca por “inteligência artificial” evoluiu. Surgiram redes de processamento. Surgiram sistemas especialistas. Surgiram algoritmos de busca. Surgiram técnicas de aprendizado. Cada avanço era pequeno. Cada avanço era crucial. Cada avanço alimentava a esperança.
+
+Em 1965, o programa ELIZA foi criado. Ele simulava um psicólogo. Ele respondia com perguntas reflexivas. Ele fazia o usuário refletir. O programa não compreendia nada. Mas o usuário sentia que estava conversando. Esse efeito surpreendeu. O efeito inspirou mais pesquisas. O efeito mostrou que a aparência de entendimento pode enganar.
+
+Em 1969, o projeto Shakey começou. Shakey era um robô móvel. Ele podia mover-se. Ele podia perceber obstáculos. Ele podia planejar rotas. Ele podia executar tarefas. Ele combinava visão, lógica e ação. Ele era um protótipo de IA autônoma. Ele demonstrou que a IA podia interagir com o mundo físico. Ele mostrou que a IA podia aprender com erros. Ele abriu portas para a robótica.
+
+Durante os anos 1970, o campo enfrentou dificuldades. Os computadores eram lentos. Os algoritmos eram custosos. A expectativa era alta. A realidade era baixa. A frustração crescia. Os financiadores questionavam. Alguns pesquisadores abandonavam. Outros persistiam. Eles simplificavam problemas. Eles focavam em nichos. Eles criavam soluções de nicho. Eles mantinham o campo vivo.
+
+Na década de 1980, a IA experimentou um renascimento. As redes neurais foram reintroduzidas. Os algoritmos de aprendizado de máquina ganharam força. O backpropagation foi aprimorado. Os computadores se tornaram mais potentes. O custo de processamento caiu. A IA voltou a ganhar atenção. A comunidade se reorganizou. As universidades abriram novos laboratórios. As empresas investiram em startups. O ecossistema cresceu.
+
+Em 1997, o computador Deep Blue venceu o campeão mundial de xadrez. O evento foi um marco. Ele demonstrou que a IA podia superar humanos em tarefas específicas. Ele provou que a inteligência artificial era real.

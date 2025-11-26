@@ -1,0 +1,11 @@
+When the agent’s performance is compared to a benchmark or an optimal policy, quantitative metrics such as the expected return, average reward per episode, or cumulative regret become the yardsticks by which learning progress is measured. In practice, these metrics are estimated through Monte‑Carlo sampling or bootstrapped temporal‑difference updates, and they guide hyper‑parameter tuning, exploration schedules, and algorithmic refinements. A robust evaluation protocol typically includes a held‑out validation set of initial states, a fixed random seed to control stochasticity, and a sufficient number of roll‑outs to reduce variance in the estimated returns.
+
+One of the most celebrated reinforcement‑learning algorithms, Q‑learning, embodies this philosophy by iteratively refining an action‑value function \(Q(s,a)\) according to the Bellman optimality equation. The update rule
+
+\[
+Q_{t+1}(s_t,a_t)\;\leftarrow\;Q_t(s_t,a_t)+\alpha\bigl[r_{t+1}+\gamma\max_{a'}Q_t(s_{t+1},a')-Q_t(s_t,a_t)\bigr]
+\]
+
+encapsulates the trade‑off between immediate reward \(r_{t+1}\) and the discounted estimate of future returns. The learning rate \(\alpha\) and the discount factor \(\gamma\) are typically tuned to balance convergence speed against stability. While tabular Q‑learning converges to the optimal action‑value function under the usual Robbins‑Monro conditions, real‑world problems with large or continuous state spaces necessitate function approximation.
+
+Linear function approximation introduces a feature mapping \(\phi(s,a)\in\mathbb{R}^d\) and a parameter vector \(\theta\), yielding the approximation \(Q(s,a;\theta)=\theta^{\top}\phi(s,a)\). The update rule then becomes a stochastic gradient step on the mean‑squared Bellman error. However, linear models often lack the expressive power to capture complex dynamics, prompting the adoption of deep neural networks as universal function approximators. Deep Q‑Networks (DQNs) stack convolutional or fully‑connected layers to learn hierarchical representations of high‑dimensional inputs, such as raw pixels in Atari games. To mitigate the bias introduced by correlated samples and non‑stationary targets, DQNs employ experience replay buffers and target networks that are periodically synchronized with the online network.

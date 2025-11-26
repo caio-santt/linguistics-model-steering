@@ -1,0 +1,31 @@
+the agent’s chosen action, and receives a reward \(r_{t}\) and the next state \(s_{t+1}\). This simple loop—observe, decide, act, learn—forms the backbone of most RL algorithms. The agent’s objective is to maximize the expected return, typically defined as the discounted sum of future rewards
+
+\[
+G_{t} = \sum_{k=0}^{\infty}\gamma^{k}r_{t+k},
+\]
+
+where \(\gamma \in [0,1)\) is a discount factor that prioritizes immediate rewards over distant ones. The policy \(\pi(a|s)\) maps states to a probability distribution over actions; the goal is to find a policy that yields the highest expected return.
+
+In practice, the agent does not have access to the transition dynamics \(P(s_{t+1}\mid s_{t},a_{t})\) or the reward function \(R(s_{t},a_{t})\). Instead, it must learn from experience. Two broad families of methods have emerged: value‑based methods, which estimate the value of state–action pairs, and policy‑based methods, which directly adjust the policy parameters.
+
+### Value‑Based Approaches
+
+The cornerstone of value‑based learning is the action‑value function, or Q‑function, defined as
+
+\[
+Q^{\pi}(s,a) = \mathbb{E}\!\left[ G_{t} \mid s_{t}=s, a_{t}=a, \pi \right].
+\]
+
+The optimal Q‑function \(Q^{*}\) satisfies the Bellman optimality equation
+
+\[
+Q^{*}(s,a) = \mathbb{E}\!\left[ r_{t} + \gamma \max_{a'} Q^{*}(s_{t+1},a') \mid s_{t}=s, a_{t}=a \right].
+\]
+
+Temporal‑difference (TD) learning exploits this equation to update Q‑estimates incrementally. The simplest TD algorithm, Q‑learning, updates the estimate using the observed sample
+
+\[
+Q(s_{t},a_{t}) \leftarrow Q(s_{t},a_{t}) + \alpha \bigl[ r_{t} + \gamma \max_{a'} Q(s_{t+1},a') - Q(s_{t},a_{t}) \bigr],
+\]
+
+where \(\alpha\) is a step‑size parameter. Despite its simplicity, Q‑learning converges to \(Q^{*}\) under standard assumptions (e.

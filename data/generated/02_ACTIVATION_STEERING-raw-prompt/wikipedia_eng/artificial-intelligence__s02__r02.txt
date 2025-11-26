@@ -1,0 +1,14 @@
+A Markov decision process (MDP) formalises this trade‑off by describing a tuple  
+\([S, A, T, R]\) where \(S\) is the set of states, \(A\) the set of actions, \(T(s,a,s')\) the transition probability from state \(s\) to \(s'\) under action \(a\), and \(R(s,a)\) the immediate reward. The optimal policy \(\pi^*\) maximises the expected cumulative reward over an infinite horizon, typically solved via value iteration or policy iteration \([39]\). When the state is partially observable, the problem becomes a partially observable Markov decision process (POMDP) \([40]\). Here the agent maintains a belief \(b(s)\) over states, updating it with Bayes’ rule after each observation \(o\):
+\[
+b'(s') = \eta \, O(o|s',a) \sum_{s\in S} T(s,a,s')\, b(s),
+\]
+where \(\eta\) normalises the distribution. Solving a POMDP yields a policy mapping beliefs to actions, often approximated by point‑based value iteration \([41]\).
+
+In practice, the curse of dimensionality forces the use of hierarchical or factored representations. Factored MDPs encode the transition and reward functions as dynamic Bayesian networks, allowing compact symbolic manipulation \([42]\). Hierarchical reinforcement learning decomposes a complex task into sub‑tasks, each with its own local policy, and a higher‑level controller orchestrates them \([43]\). This mirrors human planning, where subgoals are pursued in a nested fashion.
+
+When preferences are not fixed, the agent can employ preference learning. Inverse reinforcement learning (IRL) infers a reward function \(R\) that explains observed behaviour \([44]\). Bayesian IRL extends this by maintaining a posterior over reward parameters, thereby quantifying uncertainty \([45]\). The agent can then perform Bayesian decision‑making, selecting actions that maximise expected utility under the posterior \([46]\).
+
+Exploration–exploitation trade‑offs are addressed by information‑theoretic criteria. The expected information gain (EIG) of an action \(a\) is
+\[
+\text{EIG}(a) = \mathbb{E}_{o}\!\left[ D_{\text{KL}}\!

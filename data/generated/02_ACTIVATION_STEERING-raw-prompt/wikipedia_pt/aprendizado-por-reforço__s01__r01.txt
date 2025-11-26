@@ -1,0 +1,13 @@
+… observabilidade completa. Quando o agente não tem acesso direto a todos os estados do ambiente, mas apenas a observações ralas ou ruidosas, a estrutura torna‑se um processo de decisão de Markov parcialmente observável (POMDP). Nesse cenário, a política deve depender não só do estado atual, mas de um histórico de observações ou de uma estimativa de distribuição de estados possíveis, normalmente chamada de *belief state*. A inferência sobre o estado verdadeiro passa então a ser parte integrante do processo de tomada de decisão, exigindo técnicas adicionais como filtros de Kalman, filtros de partículas ou redes recorrentes que memorizam sequências de observações.
+
+Para resolver problemas de reforço em ambientes com observabilidade completa, algoritmos clássicos de programação dinâmica, como *value iteration* e *policy iteration*, fornecem soluções exatas quando a dinâmica do ambiente e a recompensa são conhecidas. No entanto, na maioria dos cenários de aprendizado por reforço, tais informações não estão disponíveis a priori. Isso obriga a recorrer a métodos de aprendizado baseados em amostragem, em que o agente interage com o ambiente para estimar as funções de valor e melhorar a política de forma iterativa.
+
+Um dos algoritmos mais simples e amplamente usados nesse contexto é o *Q‑learning*. Ele estima a função de valor de ação, \(Q(s,a)\), que representa a recompensa acumulada esperada ao executar a ação \(a\) no estado \(s\) e seguir posteriormente a política ótima. A atualização de \(Q\) ocorre de forma recursiva:
+
+\[
+Q_{k+1}(s,a) \leftarrow Q_{k}(s,a) + \alpha_k \left[ r + \gamma \max_{a'} Q_{k}(s',a') - Q_{k}(s,a) \right],
+\]
+
+onde \(\alpha_k\) é a taxa de aprendizado, \(\gamma\) o fator de desconto e \(s'\) o estado resultante da transição. A convergência do algoritmo depende de condições clássicas de exploração, como a política \(\epsilon\)-greedy, que garante que cada ação seja escolhida com probabilidade não nula em todos os estados.
+
+Em ambientes com grande dimensionalidade de estado ou ação, a representação explícita de \(Q(s,a)\) torna‑se impraticável. Para superar essa limitação, pesquisadores introduziram *funcionamento aproximado* usando modelos paramétricos, como redes neurais profundas. O *Deep Q‑Network* (DQN) popularizou a ideia de usar uma rede neural para aproximar a função \(Q\), treinada por meio de retropropagação em minibatches de transições armazenadas em uma *replay buffer*.

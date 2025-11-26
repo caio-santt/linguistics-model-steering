@@ -1,0 +1,13 @@
+Além da observabilidade plena, muitos cenários práticos apresentam **observabilidade parcial**: o agente não tem acesso completo ao estado do ambiente, mas apenas a observações ruidosas ou incompletas. Nesses casos, a política deve ser mapeada a partir de sequências de observações ou de um histórico de estados passados, transformando o problema em um **processo de decisão parcialmente observável** (POMDP). A solução de POMDPs exige técnicas de estimação de estado, como filtros de Kalman, filtros de partículas ou redes neurais recorrentes que aprendem representações compactas do histórico.
+
+Para lidar com a **exploração vs. exploração** (exploitation) – o dilema clássico de decidir entre usar a ação que parece mais promissora ou experimentar novas ações para descobrir melhores recompensas – diversos esquemas foram propostos. A estratégia **ε-greedy** introduz uma pequena probabilidade ε de escolher aleatoriamente uma ação, enquanto a maioria das vezes escolhe a ação com maior estimativa de valor. Estratégias mais sofisticadas, como **Boltzmann exploration** ou **Upper Confidence Bound (UCB)**, ponderam a incerteza das estimativas de valor para guiar a exploração de forma mais inteligente.
+
+Em termos de **algoritmos de aprendizado por reforço** que operam sobre o quadro de Markov, os mais clássicos são o **Q‑learning** e o **SARSA**. Ambos mantêm uma tabela de valores Q(s, a) que estimam a recompensa cumulativa esperada ao executar a ação a no estado s e seguir uma política de exploração. O Q‑learning, por ser off‑policy, atualiza a estimativa usando a ação ótima do próximo estado, enquanto o SARSA, on‑policy, usa a ação realmente escolhida. A equação de atualização do Q‑learning é:
+
+\[
+Q(s_t,a_t) \leftarrow Q(s_t,a_t) + \alpha \bigl[ r_{t+1} + \gamma \max_{a'} Q(s_{t+1},a') - Q(s_t,a_t) \bigr]
+\]
+
+onde \(\alpha\) é a taxa de aprendizado e \(\gamma\) o fator de desconto. Para ambientes com espaços de estado ou ação contínuos, a abordagem tradicional de tabelas torna-se impraticável, exigindo **aproximação de função**. Redes neurais, polinômios ou funções base de kernel são usadas para aproximar o valor Q ou a política diretamente.
+
+A introdução das **redes neurais profundas** deu origem ao campo de **Deep Reinforcement Learning (DRL)**.

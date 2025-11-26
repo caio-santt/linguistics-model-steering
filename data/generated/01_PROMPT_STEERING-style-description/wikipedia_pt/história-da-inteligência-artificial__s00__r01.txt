@@ -1,0 +1,13 @@
+O foco se deslocou para a lógica formal. Em 1950, Alan Turing publicou seu artigo “Computing Machinery and Intelligence”. Ele propôs o teste de Turing como forma de medir a inteligência. Turing não inventou a IA, mas ofereceu um marco prático. Em 1951, Christopher Strachey criou o primeiro jogo de damas em um computador. O algoritmo era simples, mas demonstrou que máquinas podiam seguir regras.
+
+Na década de 1950, John McCarthy, Marvin Minsky e outros reuniram-se em Dartmouth. Eles definiram o termo “inteligência artificial”. Em 1956, o workshop de Dartmouth se tornou o ponto de partida oficial. O grupo desenvolveu programas que resolviam problemas de lógica. A comunidade se animou, e a IA ganhou financiamento.
+
+Em 1958, Joseph Weizenbaum criou ELIZA, um programa de processamento de linguagem natural. ELIZA simulava um psicoterapeuta. Ele usava padrões de palavras e respostas predefinidas. O programa mostrou que máquinas podiam conversar. No entanto, Weizenbaum alertou que ELIZA não sentia empatia. Essa crítica ficou famosa.
+
+Os anos 60 trouxeram o perceptron, de Frank Rosenblatt. O perceptron era um modelo de rede neural. Ele podia aprender a partir de exemplos. No entanto, a teoria de Minsky e Papert mostrou limitações. Eles apontaram que perceptrons não podiam resolver problemas não linearmente separáveis. Isso desencadeou um período de escassez de recursos, chamado “inverno da IA”.
+
+Durante o inverno, a pesquisa continuou em áreas menores. Em 1965, Joseph Weizenbaum desenvolveu o programa “SHRDLU”. SHRDLU operava em um mundo de blocos. Ele entendia comandos em linguagem natural e manipulava objetos virtuais. O programa demonstrou que a IA podia interpretar instruções e executar tarefas. No entanto, o mundo de SHRDLU era limitado.
+
+Em 1972, o algoritmo de busca A* foi criado por Peter Hart, Nils Nilsson e Bertram Raphael. A* combinou heurística e custo de caminho. Ele tornou possível encontrar rotas eficientes em mapas. A* se tornou padrão em jogos e robótica. A pesquisa em lógica também avançou. Em 1976, o algoritmo de resolução de Horn foi usado em sistemas especialistas.
+
+Na década de 80, surgiram os primeiros sistemas especialistas comerciais. XCON, de DEC, configurava computadores. Ele usava regras de produção para montar sistemas complexos. O sucesso de XCON impulsionou a adoção de IA em indústrias. Em 1987, o algoritmo de backpropagation foi popularizado. Redes neurais profundas começaram a treinar com mais eficiência. A computação paralela ajudou a acelerar os cálculos.

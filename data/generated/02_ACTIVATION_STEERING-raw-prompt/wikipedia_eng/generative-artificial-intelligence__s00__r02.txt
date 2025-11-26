@@ -1,0 +1,13 @@
+Eugeny — a novel by Anton Borisov—served as a benchmark for early language models, illustrating how simple probabilistic rules could approximate the statistical regularities of a text. The Markov approach, while rudimentary, laid the groundwork for later statistical language modeling techniques that would dominate the field until the advent of neural networks.
+
+### 1950s–1970s: Rule‑Based Systems and the Birth of NLP
+
+The 1950s witnessed the emergence of the first rule‑based natural language processing (NLP) systems. Early attempts, such as the ELIZA program (Weizenbaum, 1966), demonstrated that simple pattern‑matching could simulate conversational agents. These systems relied on handcrafted grammars and lexicons, with no learning component. Subsequent work in the 1960s and 1970s expanded the scope of rule‑based parsing, introducing context‑free grammars (CFGs) and early semantic frameworks (Chomsky, 1965; Klein & Manning, 1993). However, the brittleness of hand‑crafted rules limited scalability, and the computational resources required for exhaustive parsing grew prohibitive as corpora expanded.
+
+During this era, the concept of statistical language models began to take shape. In 1979, the IBM research group published the first n‑gram language model, which estimated word probabilities based on preceding n‑1 words (Jelinek & Fisher, 1980). These models, though still deterministic in their rule‑based foundations, introduced probabilistic smoothing techniques that mitigated data sparsity—a critical step toward modern generative modeling.
+
+### 1980s–1990s: Neural Foundations and the Rise of Machine Learning
+
+The 1980s marked a paradigm shift with the introduction of artificial neural networks (ANNs). The perceptron and back‑propagation algorithms (Rumelhart, Hinton, & Williams, 1986) enabled supervised learning of complex patterns. In 1989, the first recurrent neural network (RNN) was proposed by Elman, which could, in theory, capture sequential dependencies (Elman, 1990). Despite their theoretical promise, RNNs suffered from vanishing gradients, limiting their practical use in language modeling until the late 1990s.
+
+The late 1990s and early 2000s saw the advent of support vector machines (SVMs) and kernel methods, which achieved state‑of‑the‑art performance on tasks such as part‑of‑speech tagging and named entity recognition (Cortes & Vapnik, 1995; Manning et al., 2009). However, these models still relied on engineered features, and their inability to learn representations directly from raw text constrained generative capabilities.

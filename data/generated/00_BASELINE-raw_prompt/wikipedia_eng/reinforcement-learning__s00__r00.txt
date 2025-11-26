@@ -1,0 +1,15 @@
+the agent’s current decision set, and then receives a scalar reward signal \(r_{t}\) along with the next state \(s_{t+1}\). The goal is to discover a policy \(\pi : \mathcal{S}\rightarrow \mathcal{A}\) that maximizes the expected return
+\[
+G_{t}=\mathbb{E}\!\left[\sum_{k=0}^{\infty}\gamma^{k}r_{t+k}\,\bigg|\,s_{t}=s\right],
+\]
+where \(\gamma\in[0,1)\) is a discount factor that prioritises immediate rewards over distant ones. In practice, the return is often estimated via sample trajectories and bootstrapped updates, leading to temporal‑difference (TD) learning methods such as Q‑learning and SARSA. These algorithms iteratively refine an action‑value function \(Q(s,a)\) according to the Bellman optimality equation
+\[
+Q^{*}(s,a)=\mathbb{E}\!\left[r+\gamma \max_{a'}Q^{*}(s',a')\mid s,a\right].
+\]
+
+Because the environment’s transition dynamics \(P(s'\mid s,a)\) are usually unknown, the agent must learn from interaction alone. Exploration strategies—epsilon‑greedy, soft‑max, or more sophisticated Bayesian approaches—inject stochasticity into action selection, allowing the agent to discover new state‑action pairs that might yield higher rewards. Conversely, exploitation leverages the current value estimates to choose actions that appear best. The exploration‑exploitation trade‑off is quantified by the policy’s expected regret, and numerous theoretical bounds exist for regret minimisation in bandit and MDP settings.
+
+When the state or action space is vast or continuous, tabular methods become impractical. Function approximation, often via deep neural networks, replaces the discrete \(Q\) table with a parameterised estimator \(Q_{\theta}(s,a)\). The Deep Q‑Network (DQN) framework introduced experience replay buffers and target networks to stabilize learning. Policy‑gradient methods, such as REINFORCE and actor‑critic architectures, directly optimise the policy parameters \(\theta\) by estimating the gradient of the expected return:
+\[
+\nabla_{\theta}\mathbb{E}_{\pi_{\theta}}\!\left[G_{t}\right]
+=\mathbb{E}_{\pi_{\theta}}\!\left[\nabla_{\theta}\log\pi_{\theta}(a|s)\,G_{t}\right].

@@ -1,0 +1,24 @@
+which is selected according to a policy π that may be deterministic or stochastic. After executing the chosen action a ∈ A, the environment transitions to a new state s′ ∈ S and returns a scalar reward r ∈ ℝ that quantifies the immediate desirability of the transition (s, a, s′). The agent then repeats this cycle, continually refining its policy based on the cumulative experience it gathers.
+
+The core objective of reinforcement learning is to discover a policy π∗ that maximises the expected return, defined as the discounted sum of future rewards:
+
+\[
+G_t \;=\; \sum_{k=0}^{\infty} \gamma^{k}\,R_{t+k+1},
+\]
+
+where 0 ≤ γ < 1 is a discount factor that trades off immediate versus long‑term gains. The value of a state s under a policy π is the expected return when starting from s and following π thereafter:
+
+\[
+V^{\pi}(s) \;=\; \mathbb{E}_{\pi}\!\left[\,G_t \,\big|\, S_t = s\,\right].
+\]
+
+Similarly, the action‑value function, or Q‑function, measures the expected return of taking action a in state s and thereafter following π:
+
+\[
+Q^{\pi}(s,a) \;=\; \mathbb{E}_{\pi}\!\left[\,G_t \,\big|\, S_t = s, A_t = a\,\right].
+\]
+
+A policy is optimal if it yields the highest value for every state, i.e., V∗(s) = maxπ Vπ(s). The Bellman optimality equations provide a recursive characterization of V∗ and Q∗:
+
+\[
+V^{*}(s) \;=\; \max_{a\in A}\!

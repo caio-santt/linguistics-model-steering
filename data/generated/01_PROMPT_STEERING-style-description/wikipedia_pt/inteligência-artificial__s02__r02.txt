@@ -1,0 +1,23 @@
+Desde o início os fundamentos da inteligência artificial tiveram o suporte de várias disciplinas que contribuíram com ideias, pontos de vista e técnicas para construir máquinas pensantes. A psicologia ofereceu modelos de atenção e memória. A ciência cognitiva trouxe hipóteses sobre raciocínio. A computação deu algoritmos e hardware. A robótica entregou sensores e atuadores. Cada campo adicionou peças ao quebra‑cabeça.
+
+Os primeiros experimentos eram simples. Eles usavam tabelas de decisão. Eles testavam regras de lógica. Eles registravam respostas humanas. Eles comparavam com máquinas. O objetivo era simples: fazer a máquina pensar. A curiosidade guiava. O medo de perder o controle também guiava.
+
+Turing propôs um teste. Ele chamava‑se “Teste de Turing”. Ele era um desafio de enganar. Ele exigia que a máquina falasse como um humano. Ele era controverso. Ele abriu debate. Ele inspirou gerações.
+
+Simpson e Newell criaram o GPS. Eles programaram um solucionador de problemas. Ele tentou replicar o pensamento humano. Ele usava heurísticas. Ele falhava em alguns casos. Ele mostrava que a inteligência não era simples.
+
+A década de 1950 viu a primeira IA prática. Ela era limitada. Ela era lenta. Ela era barata. Ela era curiosa. Ela era promissora. Ela inspirou mais pesquisa.
+
+No final dos anos 60, a IA começou a usar estatística. Ela empregou probabilidades. Ela aprendeu a partir de dados. Ela melhorou com mais exemplos. Ela se tornou mais confiável. Ela se tornou mais útil.
+
+A década de 1980 trouxe redes neurais. Elas imitavam neurônios. Elas ajustavam pesos. Elas aprenderam padrões. Elas superaram limites anteriores. Elas abriram novas possibilidades.
+
+No final dos anos 90, o aprendizado profundo se popularizou. Ele usou camadas profundas. Ele extraía características automaticamente. Ele reduziu a necessidade de engenharia manual. Ele produziu resultados surpreendentes. Ele mudou a indústria.
+
+Hoje a IA permeia a vida. Ela reconhece voz. Ela traduz textos. Ela dirige carros. Ela diagnostica doenças. Ela cria arte. Ela ajuda no trabalho. Ela simplifica tarefas. Ela gera novas ideias.
+
+Mas a IA traz desafios. Ela gera vieses. Ela cria desemprego. Ela aumenta a vigilância. Ela pode ser usada mal. Ela exige regulação. Ela precisa de transparência. Ela exige responsabilidade.
+
+A segurança é crítica. Ela protege dados. Ela impede ataques. Ela garante privacidade. Ela mantém confiança. Ela exige criptografia. Ela exige auditoria. Ela exige supervisão humana.
+
+A ética é igualmente vital. Ela questiona decisões. Ela questiona consequências. Ela exige explicabilidade. Ela exige justiça. Ela exige inclusão. Ela exige consentimento. Ela exige responsabilidade.

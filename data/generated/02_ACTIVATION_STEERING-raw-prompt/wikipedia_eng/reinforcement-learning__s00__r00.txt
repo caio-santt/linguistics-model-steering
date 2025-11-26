@@ -1,0 +1,26 @@
+the agent’s policy π, and receives a reward r(t+1) along with the next state s(t+1). The goal is to discover a mapping from states to actions that maximizes the expected discounted sum of future rewards,  
+
+\[
+G_t=\sum_{k=0}^{\infty}\gamma^k r_{t+k+1},
+\]
+
+where \(0\le \gamma<1\) is the discount factor that balances immediate versus long‑term gains.  
+
+A policy π can be deterministic, assigning a single action to each state, or stochastic, specifying a probability distribution over actions given a state. The value of a policy, \(V^\pi(s)\), is the expected return starting from state s and following π thereafter. Likewise, the action‑value function, \(Q^\pi(s,a)\), measures the expected return when action a is taken in state s and π is followed afterwards. The optimal value functions satisfy the Bellman optimality equations:
+
+\[
+V^*(s)=\max_{a}\bigl\{ r(s,a)+\gamma \sum_{s'}P(s'|s,a)V^*(s')\bigr\},
+\]
+\[
+Q^*(s,a)= r(s,a)+\gamma \sum_{s'}P(s'|s,a)\max_{a'}Q^*(s',a').
+\]
+
+In model‑based reinforcement learning, the transition dynamics \(P(s'|s,a)\) and reward function \(r(s,a)\) are known or estimated, allowing dynamic programming algorithms such as value iteration or policy iteration to compute \(V^*\) and π*. In contrast, model‑free methods learn directly from sampled experience without an explicit model. Classic model‑free algorithms include Monte‑Carlo methods, temporal‑difference (TD) learning, and Q‑learning.
+
+**Temporal‑Difference Learning** updates value estimates using the difference between successive predictions. The TD(0) update for the state value is
+
+\[
+V(s_t)\leftarrow V(s_t)+\alpha\bigl[r_{t+1}+ \gamma V(s_{t+1})-V(s_t)\bigr],
+\]
+
+where α is a learning rate. The bootstrapping property of TD allows learning from incomplete episodes, which is advantageous in continuing tasks.

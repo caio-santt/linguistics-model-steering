@@ -1,0 +1,73 @@
+Pa ( s , s′ ) = Pr ( St+1 = s′ | St = s , At = a ), a probabilidade de transição ( no tempo t ) de estado s para estado s′ sob a ação a.  
+
+A recompensa r ( s , a , s′ ) define o ganho instantâneo que o agente recebe ao mudar de s para s′ com a ação a.  
+
+O objetivo é maximizar a soma descontada das recompensas.  
+
+Para isso, o agente aprende uma política π ( s ) que mapeia cada estado s para uma ação a.  
+
+A política pode ser determinística ou estocástica.  
+
+A função valor Vπ ( s ) mede a recompensa esperada ao seguir π a partir de s.  
+
+A função ação‑valor Qπ ( s , a ) mede a recompensa esperada ao executar a em s e depois seguir π.  
+
+O algoritmo Q‑learning atualiza Q diretamente:  
+
+Q ( s , a ) ← Q ( s , a ) + α [ r + γ max a′ Q ( s′ , a′ ) – Q ( s , a ) ].  
+
+α é a taxa de aprendizado, γ o fator de desconto.  
+
+O termo max a′ Q ( s′ , a′ ) estimula a exploração de ações que ainda não foram testadas.  
+
+O agente explora e explora.  
+
+Exploração: tenta ações desconhecidas.  
+
+Exploração: confia no que já sabe.  
+
+Balancear ambos é essencial.  
+
+Se explorar demais, o agente pode perder recompensas imediatas.  
+
+Se explorar pouco, o agente pode ficar preso em subótimos.  
+
+Alguns métodos usam ε‑greedy:  
+
+Com probabilidade ε, escolhe ação aleatória;  
+
+Com probabilidade 1–ε, escolhe ação ótima.  
+
+ε diminui ao longo do tempo.  
+
+Assim, o agente aprende gradualmente.  
+
+Para ambientes contínuos, Q‑learning falha.  
+
+A solução: aproximadores de função.  
+
+Redes neurais podem estimar Q ( s , a ).  
+
+Essas redes recebem o estado como entrada e produzem valores de Q para cada ação.  
+
+O treinamento usa o erro quadrático entre a previsão e a target.  
+
+A target é r + γ max a′ Q ( s′ , a′ ).  
+
+Isso cria um ciclo de retroalimentação.  
+
+O agente atualiza a rede em mini‑lotes.  
+
+A estabilidade melhora com replay buffer:  
+
+Armazena transições ( s , a , r , s′ ).  
+
+Reamostra aleatoriamente para quebrar correlações temporais.  
+
+Outra técnica: target network.  
+
+Uma cópia fixa da rede principal calcula a target.  
+
+Ela atualiza lentamente, reduzindo oscilações.  
+
+Com isso, o agente aprende em ambientes complexos.

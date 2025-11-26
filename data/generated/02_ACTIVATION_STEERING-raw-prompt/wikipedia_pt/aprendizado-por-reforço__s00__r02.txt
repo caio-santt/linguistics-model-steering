@@ -1,0 +1,23 @@
+O próximo passo lógico na descrição do aprendizado por reforço é introduzir a função de valor, que quantifica a utilidade esperada de cada estado ou par estado‑ação. Em termos matemáticos, a função de valor de estado \(V^\pi(s)\) é definida como o valor esperado da soma descontada das recompensas futuras quando o agente segue a política \(\pi\) a partir do estado \(s\):
+
+\[
+V^\pi(s) = \mathbb{E}_\pi \left[ \sum_{k=0}^{\infty} \gamma^k R_{t+k+1} \,\bigg|\, S_t = s \right],
+\]
+
+onde \(\gamma \in [0,1)\) é o fator de desconto que controla a importância das recompensas futuras. Similarmente, a função de valor de ação \(Q^\pi(s,a)\) avalia a utilidade de executar a ação \(a\) no estado \(s\) e depois seguir a política \(\pi\):
+
+\[
+Q^\pi(s,a) = \mathbb{E}_\pi \left[ \sum_{k=0}^{\infty} \gamma^k R_{t+k+1} \,\bigg|\, S_t = s, A_t = a \right].
+\]
+
+Essas funções são a espinha dorsal de praticamente todos os algoritmos de aprendizado por reforço, pois permitem ao agente comparar diferentes escolhas de ação sem precisar conhecer explicitamente a dinâmica do ambiente. A relação de Bellman, que expressa a recursividade dessas funções, fornece a base para métodos de iteração de valor e política:
+
+\[
+V^\pi(s) = \sum_{a \in A} \pi(a|s) \sum_{s' \in S} P(s'|s,a) \left[ R(s,a,s') + \gamma V^\pi(s') \right],
+\]
+
+\[
+Q^\pi(s,a) = \sum_{s' \in S} P(s'|s,a) \left[ R(s,a,s') + \gamma \sum_{a' \in A} \pi(a'|s') Q^\pi(s',a') \right].
+\]
+
+A partir dessas expressões, surgem duas abordagens clássicas: **Aprendizado por Política** (policy‑gradient methods) e **Aprendizado por Valor** (value‑based methods). No primeiro, a política é parametrizada diretamente (por exemplo, como uma função softmax sobre as ações) e otimizada por gradientes de recompensa. No segundo, a função de valor é estimada, e a política é derivada pela seleção da ação que maximiza \(Q^\pi(s,a)\) (greedy).

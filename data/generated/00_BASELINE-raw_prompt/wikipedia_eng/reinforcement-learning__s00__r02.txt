@@ -1,0 +1,17 @@
+which is a function mapping states to actions. In practice, the agent often represents this mapping implicitly through a value function, a policy, or both, depending on the algorithmic framework. A classic approach is value iteration, where the agent iteratively refines an estimate of the state‑value function \(V(s)\) by Bellman backups:
+
+\[
+V_{k+1}(s)=\max_{a}\Bigl\{R(s,a)+\gamma\sum_{s'}P(s'|s,a)V_k(s')\Bigr\},
+\]
+
+with \(R(s,a)\) the immediate reward and \(\gamma\in(0,1)\) the discount factor. The resulting greedy policy \(\pi(s)=\arg\max_a\{R(s,a)+\gamma\sum_{s'}P(s'|s,a)V(s')\}\) converges to the optimal policy under standard assumptions. However, exact Bellman updates are computationally prohibitive when the state space is large or continuous, motivating approximate methods.
+
+One of the most celebrated approximate methods is Q‑learning, which directly estimates the action‑value function \(Q(s,a)\). The core update rule is
+
+\[
+Q_{k+1}(s,a)=Q_k(s,a)+\alpha_k\Bigl[r+\gamma\max_{a'}Q_k(s',a')-Q_k(s,a)\Bigr],
+\]
+
+where \(\alpha_k\) is a learning rate and \((s',r)\) is the next state and observed reward. This off‑policy algorithm converges to the optimal \(Q^\ast\) provided the exploration policy visits all state‑action pairs infinitely often and the learning rates satisfy the Robbins–Monro conditions. In practice, exploration is often realized via \(\varepsilon\)-greedy or softmax action selection, striking a balance between exploiting the current best estimate and discovering potentially superior actions.
+
+When the state space is continuous or too large for tabular representation, function approximators—linear models, neural networks, or kernel methods—are employed to generalize across similar states. Deep Q‑Networks (DQNs) pioneered by Mnih et al. combined convolutional neural networks with Q‑learning to solve high‑dimensional visual control tasks. Key innovations such as experience replay buffers and target networks stabilize learning by reducing correlations among successive samples and decoupling the target value from the rapidly changing online network.

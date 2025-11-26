@@ -1,0 +1,15 @@
+We need to continue the text with stylistic features: complex syntactic structures, high dependency distances, high pronoun density for subjective, stream-of-consciousness narrative, moderate sentence length with intricate internal structure, short simple words but elaborate patterns, low nominal and adjectival density, psychological depth, flowing interconnected clauses mirroring thought processes.
+
+We need about 531 tokens. The intro is about knowledge representation, planning, decision-making. We need to continue the narrative, maybe discussing Markov decision processes, uncertainty, etc. Use pronouns heavily, subjective voice, stream-of-consciousness. Use short simple words but elaborate patterns. Low nominal and adjectival density: avoid many nouns/adjectives. Use pronouns, verbs, etc.
+
+We should keep moderate sentence length but intricate internal structure. Use complex syntactic structures with high dependency distances: long sentences with many subordinate clauses.
+
+We need to produce about 531 tokens (~ about 3500 characters). We'll produce a long paragraph with many sentences.
+
+We need to maintain the same language: English. We need to continue the text, not repeat the introductory section. So start with "The space of possible future actions..." or something. Use pronouns: it, they, we, he, she, etc.
+
+We need to maintain high pronoun density for subjective, stream-of-consciousness narrative. So maybe "I" and "we" appear often.
+
+Also maintain low nominal and adjectival density: avoid many nouns/adjectives. Use short simple words: "I", "you", "we", "he", "she", "it", "them", "me", "him", "her", "us", "them". Use verbs like "think", "know", "see", "feel", "go", "take", "do", "make", "have", "want", "need". Use prepositions: "to", "in", "of", "for", "by", "with", "on", "at". Use conjunctions: "and", "but", "or", "so". Use adverbs: "now", "then", "ever", "again", "still". Use pronouns: "I", "me", "my", "you", "your", "he", "him", "she", "her", "they", "them", "we", "us", "our", "their", "its".
+
+Also incorporate high pronoun density: "I", "you", "he", "she", "it", "they".

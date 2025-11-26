@@ -1,0 +1,25 @@
+We need to continue the text, maintain same language (English), approximate 587 tokens. Must use complex syntactic structures with high dependency distances, high pronoun density for subjective, stream-of-consciousness narrative, moderate sentence length with intricate internal structure, short simple words but elaborate patterns, low nominal and adjectival density, focusing on psychological depth, flowing interconnected clauses that mirror thought processes.
+
+The text is a factual historical summary. But now we need to continue with these stylistic features. We need to maintain the same language, but the new text should be a continuation, presumably about the survey on the Chinese social app Soul. The user wants to continue the text maintaining the stylistic features. So we need to produce a continuation that flows from that point, but also meets the constraints. The continuation should be about 587 tokens. Must be in English. Use complex syntactic structures, high pronoun density, short simple words but elaborate patterns, low nominal and adjectival density, psychological depth. So it's like a stream-of-consciousness but still about the survey on Chinese social app Soul. We need to produce 587 tokens approx. Let's produce around 590 tokens.
+
+We need to keep the same language: English. The introduction had citations and such. We can continue with more survey results, commentary, etc.
+
+We need to ensure high pronoun density: many pronouns like "it", "they", "he", "she", "they", "them", etc. Use subjective pronouns. Use complex syntactic structures: subordinate clauses, relative clauses, etc. Use short simple words: "I", "you", "he", "she", "we", "they", "it", "and", "or", "but", "if", "when", "then", "so", "as", "like", etc. But we need to arrange them in elaborate patterns. Also keep low nominal and adjectival density: minimal nouns and adjectives. Focus on psychological depth. Flowing interconnected clauses.
+
+We must maintain moderate sentence length with intricate internal structure. So maybe 20-25 words per sentence, but with subordinate clauses.
+
+We need to produce 587 tokens. Let's aim for about 590 tokens. Let's count approximate tokens: each word counts as token. We'll produce about 590 words.
+
+Let's begin: "The 2024 survey on the Chinese social app Soul revealed that..."
+
+We must keep the same style. Let's start.
+
+We'll produce about 590 tokens. Let's do it.
+
+We must not repeat the introductory section. So we start after the last line: "A 2024 survey on the Chinese social app Soul reported". So we continue from there. We'll produce the continuation.
+
+Let's write:
+
+"The 2024 survey on the Chinese social app Soul reported..."
+
+We need to incorporate pronouns, etc.

@@ -1,0 +1,11 @@
+[ 39 ] Markov decision processes (MDPs) formalise this structure by coupling a finite set of states \(S\), a finite set of actions \(A\), a transition probability function \(T(s,a,s')\), and a reward function \(R(s,a)\). The agent’s objective is to maximise the expected cumulative reward over a horizon, often discounted by a factor \(\gamma \in [0,1)\). In a fully observable MDP, the agent knows exactly which state \(s\) it occupies, and dynamic programming methods such as value iteration or policy iteration can compute an optimal policy \(\pi^*\) that maps each state to the best action. The Bellman optimality equation encapsulates this principle:
+
+\[
+V^*(s) \;=\; \max_{a \in A} \Bigl[ R(s,a) + \gamma \sum_{s' \in S} T(s,a,s') V^*(s') \Bigr].
+\]
+
+[ 40 ] However, the real world rarely offers perfect observability. When the agent receives only a noisy observation \(o \in O\) rather than the true state, we enter the realm of partially observable Markov decision processes (POMDPs). The agent must maintain a belief distribution \(b(s)\) over states, updating it with Bayes’ rule as new observations arrive. The value function becomes a function over beliefs, and optimal policies are typically represented as mappings from belief points to actions. Solving POMDPs exactly is intractable for all but the smallest problems, so approximate methods—point-based value iteration, policy search, or Monte Carlo tree search—are employed.
+
+[ 41 ] In addition to uncertainty about the environment, the agent may face uncertainty about its own preferences or the preferences of others. Preference elicitation can be framed as a Bayesian inference problem: the agent maintains a prior over possible utility functions \(U\), and updates this prior as it observes choices or receives feedback. The updated posterior informs the agent’s expected utility calculations, allowing it to adapt its policy to align with the true preferences. This is particularly salient in human–robot interaction, where the robot must learn which actions humans deem socially acceptable or desirable.
+
+[ 42 ] Information gathering is another critical dimension. The agent may have to decide whether to take an exploratory action that reduces uncertainty about the environment or its own goals, at the cost of immediate reward.

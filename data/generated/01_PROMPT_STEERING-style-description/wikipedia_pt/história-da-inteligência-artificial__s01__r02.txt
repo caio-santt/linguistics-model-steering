@@ -1,0 +1,21 @@
+O progresso continuou. Os primeiros programas de IA eram pequenos. Eles eram escritos em Assembly. Eles rodavam em máquinas gigantes. As máquinas eram lentas. Mas os pesquisadores não se cansavam. Eles testavam lógica. Eles testavam raciocínio.
+
+Na década de 1960, surgiram novas ideias. Os sistemas especialistas começaram a aparecer. Eles simulavam especialistas humanos. Eles tomavam decisões. Eles explicavam escolhas. Os primeiros especialistas eram sobre medicina. Eles ajudavam a diagnosticar doenças. Eles usavam regras simples. Eles ainda eram rudimentares.
+
+Os pesquisadores começaram a usar redes neurais. As redes eram inspiradas no cérebro. Elas tinham camadas de nós. Elas processavam sinais. Elas aprendiam com exemplos. No início, as redes eram pequenas. Elas podiam reconhecer padrões simples. Elas eram limitadas. Mas elas mostravam potencial.
+
+O campo se expandiu. A computação evoluiu. Os computadores ficaram menores. Os custos caíram. As pessoas começaram a usar computadores em casa. Isso abriu portas. A IA começou a entrar no cotidiano. As primeiras assistentes virtuais surgiram. Elas respondiam perguntas. Elas executavam tarefas simples. Elas ainda eram básicas. Mas elas mostravam que a IA podia ser útil.
+
+Na década de 1970, surgiram novos paradigmas. A lógica de programação se tornou mais poderosa. Os programadores começaram a usar linguagens específicas. Elas facilitavam a criação de agentes inteligentes. Os agentes podiam interagir com o ambiente. Eles podiam aprender. Eles podiam adaptar-se.
+
+O interesse público aumentou. A mídia começou a falar sobre IA. As pessoas ficaram curiosas. Elas imaginavam robôs. Elas temiam perda de empregos. Elas também viam oportunidades. A discussão se tornou mais ampla. A política começou a considerar regulamentações.
+
+No final da década de 1980, surgiram os primeiros robôs domésticos. Eles podiam limpar pisos. Eles podiam aspirar poeira. Eles podiam seguir caminhos. Eles eram programados por humanos. Eles ainda eram simples. Mas eles mostravam que a IA podia ser prática.
+
+Na década de 1990, a IA entrou em jogos. Os computadores começaram a vencer humanos em xadrez. Eles também começaram a vencer em Go. Eles usavam algoritmos de busca. Eles usavam avaliação de posições. Eles se tornaram famosos. Isso inspirou novos pesquisadores. Eles queriam criar IA mais geral.
+
+O ano de 2002 marcou a chegada dos robôs autônomos. Eles podiam navegar em ambientes desconhecidos. Eles usavam sensores. Eles evitavam obstáculos. Eles aprendiam de experiência. Eles eram usados em fábricas. Eles aumentaram produtividade.
+
+Hoje, a IA está em quase tudo. Ela ajuda médicos a diagnosticar. Ela ajuda advogados a analisar documentos. Ela ajuda agricultores a prever colheitas. Ela ajuda artistas a criar obras. Ela ajuda nós a entender o mundo.
+
+Mas a IA ainda tem desafios.

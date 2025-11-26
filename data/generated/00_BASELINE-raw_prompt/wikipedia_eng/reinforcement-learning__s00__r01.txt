@@ -1,0 +1,31 @@
+which is selected according to a policy π that maps states to actions. The policy may be deterministic or stochastic, and its quality is evaluated by the expected return, defined as the cumulative discounted reward  
+
+\[
+G_t = \sum_{k=0}^{\infty}\gamma^k r_{t+k+1},
+\]
+
+where \(0\le\gamma<1\) is the discount factor and \(r_{t}\) denotes the reward received at step \(t\). The objective of the agent is to discover a policy \(\pi^*\) that maximises the expected return from every state, i.e.  
+
+\[
+\pi^* = \arg\max_{\pi}\mathbb{E}[G_t \mid s_t=s].
+\]
+
+The value function associated with a policy, \(V^\pi(s)=\mathbb{E}_\pi[G_t\mid s_t=s]\), satisfies the Bellman expectation equation  
+
+\[
+V^\pi(s)=\sum_{a}\pi(a\mid s)\sum_{s',r}p(s',r\mid s,a)\bigl(r+\gamma V^\pi(s')\bigr),
+\]
+
+where \(p(s',r\mid s,a)\) denotes the transition probability and reward distribution. The optimal value function, \(V^*(s)\), obeys the Bellman optimality equation  
+
+\[
+V^*(s)=\max_{a}\sum_{s',r}p(s',r\mid s,a)\bigl(r+\gamma V^*(s')\bigr).
+\]
+
+Solving these equations exactly requires knowledge of the transition dynamics and is computationally intractable for large state spaces. Consequently, a plethora of approximation schemes have been devised. Among the most influential is temporal‑difference learning, in which the value of a state is updated incrementally using the observed reward and the estimated value of the next state. The simplest incarnation, Q‑learning, maintains an action‑value function \(Q(s,a)\) and updates it via  
+
+\[
+Q_{t+1}(s_t,a_t)\leftarrow Q_t(s_t,a_t)+\alpha\bigl[r_{t+1}+\gamma\max_{a'}Q_t(s_{t+1},a')-Q_t(s_t,a_t)\bigr],
+\]
+
+with learning rate \(\alpha\in(0,1)\). This update rule converges to the optimal action‑value function under mild conditions, even when the agent follows a purely exploratory policy such as ε‑greedy or soft‑max sampling.

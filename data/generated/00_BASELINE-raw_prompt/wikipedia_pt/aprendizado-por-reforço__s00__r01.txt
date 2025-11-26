@@ -1,0 +1,21 @@
+Pa(s, s′) = Pr (St+1 = s′ | St = s , At = a) , a probabilidade de transição ( no tempo t ) de estado s para estado s′ sob a ação a. Esse elemento, junto com a função de recompensa r(s, a, s′), define o núcleo do processo de decisão de Markov (PDM) que serve de palco para o agente aprender a maximizar a soma acumulada de recompensas. Para ilustrar, imagine um robô que percorre um labirinto; cada posição é um estado s, cada movimento possível é uma ação a, e a transição para a próxima posição segue a dinâmica Pa(s, s′). A recompensa pode ser positiva ao encontrar a saída, negativa ao colidir com uma parede, ou zero em passos neutros.
+
+### Funções de valor e políticas
+
+O objetivo do agente é descobrir uma política π: S → A que mapeie cada estado para uma ação, de modo que a recompensa acumulada seja maximizada. Para isso, introduz‑se a **função de valor** Vπ(s), que mede a expectativa de retorno futuro a partir do estado s quando se segue a política π. Em termos matemáticos:
+
+Vπ(s) = Eπ [ Σt=0^∞ γ^t r(St, At, St+1) | St = s ],
+
+onde γ ∈ [0,1) é o fator de desconto que pondera recompensas futuras. Se γ = 0, o agente apenas maximiza a recompensa imediata; se γ → 1, ele valoriza igualmente recompensas distantes.
+
+A função de ação‑valor Qπ(s, a) estende esse conceito, avaliando a qualidade de executar a ação a no estado s e, em seguida, seguir π:
+
+Qπ(s, a) = Eπ [ Σt=0^∞ γ^t r(St, At, St+1) | St = s, At = a ].
+
+A relação de Bellman, que liga Vπ e Qπ, é a pedra angular da maioria dos algoritmos de RL:
+
+Vπ(s) = Σa π(a|s) [ r(s, a) + γ Σs′ Pa(s, a, s′) Vπ(s′) ],
+
+Qπ(s, a) = r(s, a) + γ Σs′ Pa(s, a, s′) Vπ(s′).
+
+Essas equações expressam que o valor de um estado (ou de um par estado‑ação) depende do valor futuro esperado, ponderado pela política e pelas transições.

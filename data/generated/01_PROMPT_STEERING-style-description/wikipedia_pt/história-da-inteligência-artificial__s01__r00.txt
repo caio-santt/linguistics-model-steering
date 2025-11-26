@@ -1,0 +1,55 @@
+O sucesso inicial prosseguiu com novas ideias.  
+Os pesquisadores experimentaram lógica booleana em circuitos.  
+Eles criaram algoritmos que resolviam problemas simples.  
+Em 1956, a conferência de Dartmouth marcou um ponto.  
+Grupos de cientistas reuniram-se para discutir a máquina pensante.  
+Eles dividiram tarefas entre lógica, aprendizado e percepção.  
+Cada equipe testou hipóteses em laboratórios pequenos.  
+Os primeiros programas rodavam em máquinas gigantes.  
+Eles usavam memória limitada, mas ainda assim avançavam.  
+Os resultados eram surpreendentes: a máquina reconheceu padrões.  
+
+Nos anos seguintes, surgiram novos conceitos.  
+A lógica fuzzy foi introduzida para lidar com incertezas.  
+Os pesquisadores perceberam que a razão humana não era exata.  
+Eles criaram algoritmos que aceitavam imprecisão.  
+Isso abriu portas para sistemas de controle industrial.  
+As fábricas começaram a usar robôs para montar peças.  
+Os robôs executavam movimentos repetitivos com precisão.  
+Mas o objetivo maior ainda era a inteligência.  
+
+No início dos anos 60, surgiram redes neurais artificiais.  
+Os primeiros modelos eram simples perceptrons.  
+Eles aprendiam a classificar objetos em duas categorias.  
+Os cientistas testaram o perceptron com imagens de dígitos.  
+O algoritmo convergia, mas apenas para casos simples.  
+A limitação ficou clara: redes não podiam resolver problemas complexos.  
+
+Ao mesmo tempo, surgiram pesquisas em lógica matemática.  
+Os matemáticos criaram sistemas de prova automática.  
+Esses sistemas ajudavam a validar teoremas.  
+Alguns deles se tornaram precursores de softwares de assistência.  
+O trabalho de Gödel inspirou novos algoritmos de prova.  
+
+Na década de 1970, a IA começou a se espalhar.  
+Sistemas especialistas surgiram em medicina e finanças.  
+Esses sistemas utilizavam regras explícitas.  
+Os médicos usavam especialistas para diagnosticar doenças.  
+Os traders usavam sistemas para prever movimentos de mercado.  
+A confiança em máquinas cresceu.  
+Mas também surgiram críticas.  
+Alguns questionaram a dependência de regras rígidas.  
+
+A década de 1980 trouxe a ascensão da inteligência computacional.  
+Os computadores se tornaram mais rápidos e baratos.  
+Os pesquisadores aproveitaram o aumento de potência.  
+Desenvolveram algoritmos de busca e otimização.  
+Os jogos de xadrez foram um campo de teste.  
+Em 1997, um computador venceu o campeão mundial.  
+Isso chocou o mundo.  
+As máquinas demonstraram que podiam superar humanos em tarefas específicas.  
+
+No final dos anos 90, a IA entrou em novas áreas.  
+A visão computacional avançou com câmeras digitais.  
+Os algoritmos de reconhecimento facial surgiram.  
+Os sistemas de recomendação começaram a usar dados de usuários.

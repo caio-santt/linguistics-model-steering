@@ -1,0 +1,9 @@
+Pa (s, s′) = Pr (St+1 = s′ | St = s, At = a) , a probabilidade de transição (no tempo t) de estado s para estado s′ sob a ação a, e  
+R (s, a, s′) = E [Rt+1 | St = s, At = a, St+1 = s′] , a recompensa esperada que acompanha tal transição. O objetivo do agente é determinar uma política π : S → A que maximize a recompensa cumulativa, tipicamente a soma descontada  
+Gt = ∑k=0∞ γk Rt+1+k , com 0 < γ ≤ 1.  
+
+A política pode ser determinística, π(s) = a, ou estocástica, π(a | s) = Pr(At = a | St = s). Para avaliar a qualidade de uma política usamos a função de valor Vπ(s) = Eπ[Gt | St = s] e a função de ação‑valor Qπ(s, a) = Eπ[Gt | St = s, At = a]. As relações de Bellman estabelecem que  
+Vπ(s) = ∑a π(a | s) [ R(s, a) + γ ∑s′ Pa(s, s′) Vπ(s′) ]  
+Qπ(s, a) = R(s, a) + γ ∑s′ Pa(s, s′) ∑a′ π(a′ | s′) Qπ(s′, a′).  
+
+Quando o modelo completo (Pa, R) é desconhecido, o agente deve aprender a partir da experiência. Os algoritmos de aprendizado por reforço se dividem em duas grandes categorias: **modelos baseados em aprendizado de políticas** (policy‑gradient, REINFORCE, Actor‑Critic) e **modelos baseados em valor** (Q‑learning, SARSA, DQN).

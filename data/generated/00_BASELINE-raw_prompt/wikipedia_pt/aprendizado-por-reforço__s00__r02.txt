@@ -1,0 +1,25 @@
+Pa (s , s′) = Pr (St+1 = s′ | St = s , At = a), a probabilidade de transição (no tempo t) de estado s para estado s′ sob a ação a. O sinal de recompensa, R (s , a , s′), associa a transição a um valor numérico que o agente deve maximizar ao longo do tempo. A política π (s) define a distribuição de probabilidade sobre as ações que o agente pode executar em cada estado. O objetivo central do aprendizado por reforço é encontrar uma política π* que maximize a recompensa cumulativa esperada, geralmente expressa como a soma descontada das recompensas futuras:
+
+J(π) = Eπ [ Σt=0^∞ γ^t R(St , At , St+1) ],
+
+onde γ ∈ [0,1) é o fator de desconto que controla a importância das recompensas futuras.
+
+Para resolver esse problema, o agente calcula a função de valor Vπ (s), que mede a recompensa esperada ao iniciar em s e seguir a política π, e a função de ação‑valor Qπ (s , a), que mede a recompensa esperada ao executar a ação a em s e depois seguir π. A relação de Bellman estabelece que:
+
+Vπ (s) = Σa π (a | s) [ R(s , a) + γ Σs' P(s , a , s') Vπ (s') ],
+
+e
+
+Qπ (s , a) = R(s , a) + γ Σs' P(s , a , s') Vπ (s').
+
+Quando a política é ótima, Vπ (s) torna‑se V* (s) e Qπ (s , a) torna‑se Q* (s , a), satisfazendo a equação de Bellman ótima:
+
+Q* (s , a) = R(s , a) + γ Σs' P(s , a , s') maxa' Q* (s' , a').
+
+O Q‑learning, um dos algoritmos mais emblemáticos, atualiza iterativamente estimativas de Q* usando amostras de transições observadas:
+
+Q(s , a) ← Q(s , a) + α [ R + γ maxa' Q(s' , a') – Q(s , a) ],
+
+onde α ∈ (0,1] é a taxa de aprendizado. Em ambientes com espaço de estados ou ações finito e pequeno, essa abordagem tabular converge rapidamente, mas rapidamente se torna inviável quando o espaço cresce exponencialmente, pois requer memória e tempo de exploração proporcional ao número de pares (s , a).
+
+Para lidar com espaços contínuos ou de alta dimensionalidade, o aprendizado por reforço recorre a aproximações de função.

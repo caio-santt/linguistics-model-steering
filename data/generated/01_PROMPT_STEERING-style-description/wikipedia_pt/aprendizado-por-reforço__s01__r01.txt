@@ -1,0 +1,23 @@
+O agente observa o estado. Ele pensa rápido. Ele escolhe a ação. Ele observa a resposta. Ele sente a recompensa. Ele ajusta a política. Ele repete.
+
+A política evolui. Ela muda em cada passo. Ela aprende com erros. Ela aprende com acertos. Ela procura o máximo. Ela busca o ganho. Ela faz ajustes pequenos. Ela faz ajustes grandes. Ela se adapta ao ambiente.
+
+O ambiente responde. Ele muda. Ele oferece novos estados. Ele oferece novas recompensas. Ele desafia o agente. Ele testa a política. Ele força a adaptação.
+
+O agente calcula valor. Ele calcula Q(s,a). Ele calcula V(s). Ele atualiza estimativas. Ele corrige desvios. Ele converge lentamente. Ele converge rapidamente. Ele alcança estabilidade.
+
+O algoritmo usa Bellman. Ele aplica a equação. Ele atualiza valores. Ele repete. Ele converge. Ele se estabiliza. Ele se adapta. Ele se torna eficiente.
+
+O aprendizado pode ser tabular. Ele pode usar tabelas. Ele pode usar funções aproximadas. Ele pode usar redes neurais. Ele pode usar deep Q. Ele pode usar policy gradients. Ele pode usar actor-critic. Ele pode usar REINFORCE. Ele pode usar PPO. Ele pode usar DDPG. Ele pode usar SAC. Ele pode usar TD3. Ele pode usar A3C. Ele pode usar TRPO.
+
+O agente escolhe método. Ele escolhe modelo. Ele escolhe hiperparâmetros. Ele escolhe exploração. Ele escolhe exploração. Ele escolhe ε-greedy. Ele escolhe softmax. Ele escolhe entropy. Ele escolhe regularização. Ele escolhe otimização. Ele escolhe Adam. Ele escolhe RMSProp. Ele escolhe SGD.
+
+O agente lida com exploração. Ele explora aleatoriamente. Ele explora sistematicamente. Ele explora com ε decrescente. Ele explora com decaimento exponencial. Ele explora com decay linear. Ele explora com decaimento adaptativo. Ele explora com decaimento de taxa.
+
+O agente lida com exploração. Ele explora novas ações. Ele explora novas transições. Ele explora novas recompensas. Ele explora novos estados. Ele explora com curiosidade. Ele explora com informação. Ele explora com aprendizado de modelo. Ele explora com model-free.
+
+O agente lida com exploração. Ele lida com risco. Ele lida com incerteza. Ele lida com variância. Ele lida com confiança. Ele lida com confiança. Ele lida com confiança.
+
+O agente lida com exploração. Ele lida com exploração. Ele lida com exploração. Ele lida com exploração. Ele lida com exploração.
+
+O agente lida com exploração.

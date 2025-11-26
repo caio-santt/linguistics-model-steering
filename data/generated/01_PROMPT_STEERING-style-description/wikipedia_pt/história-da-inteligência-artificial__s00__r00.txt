@@ -1,0 +1,17 @@
+Alguns deles desenvolveram modelos de controle que simulavam o fluxo de informações no cérebro. Eles testaram máquinas que aprendiam a partir de exemplos. Cada experimento falhava e, ao mesmo tempo, revelava novas pistas. Os engenheiros criaram circuitos simples, que respondiam a estímulos externos. Eles programaram regras de decisão básicas. Cada regra era executada em milissegundos, permitindo respostas rápidas.
+
+O avanço veio quando surgiram os primeiros algoritmos de aprendizado. Esses algoritmos permitiam que a máquina ajustasse seus parâmetros. Eles ajustavam pesos internos. Cada ajuste melhorava a performance. O resultado era uma máquina que podia reconhecer padrões. Ela reconhecia formas, sons e textos. Cada reconhecimento era confirmado por testes subsequentes. Assim, a IA começou a se auto‑melhorar.
+
+Nos anos 1950, a comunidade científica começou a discutir a viabilidade de criar um cérebro eletrônico. Eles se reuniam em conferências. Eles debatiam teorias. Eles questionavam limites. Cada debate impulsionava novas pesquisas. Os resultados eram publicados em periódicos. Cada artigo trazia novas ideias. A comunidade crescia.
+
+No final da década, surgiram os primeiros programas de lógica formal. Esses programas resolviam problemas matemáticos. Eles aplicavam regras de inferência. Cada inferência era verificada. Quando falhava, o algoritmo recalculava. Assim, a IA se tornou mais confiável.
+
+Na década de 1960, a IA entrou em um novo ciclo. Os pesquisadores criaram sistemas de planejamento. Esses sistemas geravam sequências de ações. Cada ação era escolhida com base em metas. Os sistemas eram testados em ambientes controlados. Cada teste mostrava melhorias. A confiança na IA aumentava.
+
+Ao mesmo tempo, surgiram os primeiros robôs. Esses robôs eram controlados por programas de IA. Eles executavam tarefas simples. Cada tarefa exigia coordenação entre sensores e atuadores. Os robôs se moviam em linhas retas. Eles evitavam obstáculos. Cada movimento era calculado em tempo real. A IA guiava cada passo.
+
+Na década de 1970, a IA começou a se infiltrar em aplicações comerciais. Sistemas de diagnóstico médico surgiram. Eles analisavam exames. Cada exame era processado rapidamente. Os resultados eram entregues em minutos. Os médicos confiavam nos resultados. A IA ajudava no diagnóstico.
+
+Durante os anos 1980, a IA se expandiu para o mercado de consumo. Sistemas de recomendação surgiram. Eles analisavam preferências de usuários. Cada usuário recebia sugestões personalizadas. Os usuários interagiam com os sistemas. Cada interação gerava dados adicionais. Os sistemas aprendiam continuamente.
+
+Na década de 1990, a IA passou a integrar a internet. Algoritmos de busca se tornaram mais sofisticados. Cada consulta era processada em segundos. Os resultados eram filtrados por relevância. A IA refinava os filtros.
