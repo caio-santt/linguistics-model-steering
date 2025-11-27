@@ -29,12 +29,13 @@ Este repositório contém **apenas a análise linguística** dos textos gerados.
    - Metodologia de aplicação dos vetores durante geração
    - Scripts de geração dos 540 textos
 
-3. **📝 Prompts de Geração** ⚠️ **CRÍTICO**
-   - Prompt baseline (continuação simples)
-   - **Prompt steering com descrições estilométricas detalhadas** (necessário para interpretar métricas)
-   - Instruções de temperatura, top-p, e outros hiperparâmetros
+3. **📝 Prompts de Geração** ✅ **DOCUMENTADO**
+   - Ver `PROMPTS_DOCUMENTATION.md` para templates completos
+   - Prompt baseline: Continuação genérica sem instruções
+   - Prompt steering: Descrições estilométricas detalhadas (PT vs EN com perfis diferentes)
+   - Hiperparâmetros de geração (temperatura, top-p) ainda não documentados
 
-**Status atual:** Repositório focado em análise downstream. Pipeline upstream será documentado em breve.
+**Status atual:** Repositório focado em análise downstream. Pipeline upstream parcialmente documentado.
 
 ## 📁 Estrutura do Projeto
 
@@ -231,7 +232,7 @@ Se usar este trabalho, considere citar:
 
 - [ ] Dataset completo de treinamento (corpus literário + enciclopédico)
 - [ ] Pipeline de cálculo de steering vectors
-- [ ] Prompts de geração (baseline, prompt steering, activation steering)
+- [x] Prompts de geração (ver `PROMPTS_DOCUMENTATION.md`)
 - [ ] Scripts de geração dos 540 textos
 - [ ] Hiperparâmetros de geração (temperatura, top-p, etc.)
 - [ ] Notebook demonstrativo do processo completo

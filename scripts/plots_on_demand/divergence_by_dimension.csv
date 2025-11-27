@@ -1,0 +1,13 @@
+method,dimension,mean_divergence,std_divergence,n_metrics,classification
+baseline,Léxica (básica),0.2089381626205491,0.20696986468988476,8,Baixa ✅
+baseline,Sintática UPOS (classes gram.),0.39288765389074204,0.14643447493211212,7,Média ⚠️
+baseline,Sintática DEPREL (dependências),0.641766817574727,0.4175961800982025,19,Alta ❌
+baseline,Sintática (outras),0.3642899148708437,0.16931060002440396,31,Média ⚠️
+prompt_steering,Léxica (básica),1.1387249753655688,1.8061373385613804,8,Alta ❌
+prompt_steering,Sintática UPOS (classes gram.),0.6474100225325957,0.3561544218337328,7,Alta ❌
+prompt_steering,Sintática DEPREL (dependências),0.8862958986183792,0.587323869911874,19,Alta ❌
+prompt_steering,Sintática (outras),0.4295196650508118,0.1825421696288867,31,Alta ❌
+activation_steering,Léxica (básica),0.24177549667949289,0.25502686917969203,8,Baixa ✅
+activation_steering,Sintática UPOS (classes gram.),0.400526399014129,0.15817445990323029,7,Alta ❌
+activation_steering,Sintática DEPREL (dependências),0.6564500200839622,0.42155121519691535,19,Alta ❌
+activation_steering,Sintática (outras),0.3633429057167212,0.16926062175883252,31,Média ⚠️

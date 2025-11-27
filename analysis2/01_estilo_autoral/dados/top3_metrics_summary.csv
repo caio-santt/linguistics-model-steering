@@ -1,0 +1,4 @@
+Métrica,η²,Ranking,Maior,Menor,Diferença
+Tamanho de Frases,0.589,wikipedia_pt > wikipedia_eng > woolf > lispector,wikipedia_pt (34.39),lispector (11.14),3.09×
+Riqueza Vocabular (TTR),0.282,wikipedia_pt > lispector > wikipedia_eng > woolf,wikipedia_pt (0.51),woolf (0.46),1.12×
+Densidade de Pronomes,0.81,woolf > lispector > wikipedia_eng > wikipedia_pt,woolf (0.12),wikipedia_pt (0.02),6.22×
