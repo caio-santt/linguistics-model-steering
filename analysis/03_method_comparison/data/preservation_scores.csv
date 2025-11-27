@@ -1,0 +1,6 @@
+,preservation_score,preservation_score,preservation_score,preservation_score
+,mean,std,min,max
+method,,,,
+activation_steering,0.716,0.272,0.01,0.893
+baseline,0.715,0.272,0.021,0.9
+prompt_steering,0.623,0.415,0.0,0.839

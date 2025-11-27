@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment
+.env
+.venv
+.conda
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs - Mantém estrutura mas ignora CSVs grandes
+metrics/*.csv
+metrics/*/*.csv
+metrics/*/*/*.csv
+metrics/udpipe_output/*.conllu
+metrics_filtered/*.csv
+
+# Plots grandes (manter estrutura)
+analysis/*/plots/*.png
+analysis/*/plots/*.jpg
+
+# Temporary files
+test_udpipe_output/
+*.tmp
+*.log
