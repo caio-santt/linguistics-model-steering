@@ -24,8 +24,9 @@ plt.rcParams['font.size'] = 11
 
 # Paths
 BASE_DIR = Path(__file__).parent.parent
-METRICS_FILE = BASE_DIR / "metrics_filtered/all_texts_filtered.csv"
-OUTPUT_DIR = BASE_DIR / "analysis2"
+# analysis2/01_estilo_autoral/scripts -> linguistics_and_model_steering/metrics_filtered
+METRICS_FILE = BASE_DIR.parent.parent / "metrics_filtered" / "all_texts_filtered.csv"
+OUTPUT_DIR = BASE_DIR / "plots"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 print("=" * 80)
@@ -161,8 +162,8 @@ for author in df_orig['author'].unique():
                c=colors.get(author, 'gray'), label=author, 
                s=100, alpha=0.7, edgecolors='black', linewidth=0.5)
 
-ax.set_xlabel(f'PC1 ({var_explained[0]*100:.1f}% da variância)', fontsize=12, weight='bold')
-ax.set_ylabel(f'PC2 ({var_explained[1]*100:.1f}% da variância)', fontsize=12, weight='bold')
+ax.set_xlabel(f'PC1 - Complexidade Linguística ({var_explained[0]*100:.1f}% da variância)', fontsize=12, weight='bold')
+ax.set_ylabel(f'PC2 - Estilo Verbal/Nominal ({var_explained[1]*100:.1f}% da variância)', fontsize=12, weight='bold')
 ax.set_title('Espaço Estilístico dos Autores (PCA)', fontsize=14, weight='bold', pad=20)
 ax.legend(fontsize=11, loc='best')
 ax.grid(True, alpha=0.3)
